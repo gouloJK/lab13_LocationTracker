@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#E8F5E9">
+
+    <!-- App Logo/Icon -->
+    <ImageView
+        android:id="@+id/appLogoIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp"
+        android:src="@android:drawable/ic_dialog_map"
+        android:contentDescription="Location Tracker Logo" />
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS Location Tracker"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/infoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track and visualize your locations on the map"
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"
+        android:paddingHorizontal="16dp" />
+
+    <!-- Status Indicator -->
+    <TextView
+        android:id="@+id/gpsStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS Status: Initializing..."
+        android:textSize="14sp"
+        android:textColor="#388E3C"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Open Map Button -->
+    <Button
+        android:id="@+id/openMapViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="VIEW LOCATION MAP"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#43A047"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="28dp" />
+
+    <!-- Save Current Location Button -->
+    <Button
+        android:id="@+id/saveCurrentSpotBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="SAVE MY POSITION"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        app:cornerRadius="28dp" />
+
+</LinearLayout>
